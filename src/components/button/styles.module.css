@@ -1,0 +1,10 @@
+.btn {
+  display: inline-block;
+  padding: 16px 59px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, white, white);
+  border-image-slice: 1;
+  clip-path: polygon(70% 0, 100% 22%, 100% 100%, 75% 100%, 0 100%, 0 0);
+}

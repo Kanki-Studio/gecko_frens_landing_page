@@ -1,0 +1,17 @@
+.nav {
+  font-family: "Red Rose";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.nav_active {
+  font-family: "Red Rose";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: linear-gradient(180deg, #fff 0%, #03b9bb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
