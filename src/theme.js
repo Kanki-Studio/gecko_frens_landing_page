@@ -4,8 +4,8 @@ export const Theme = extendTheme({
   styles: {
     global: () => ({
       body: {
-        backgroundColor: "#090909",
-        fontFamily: "Red Hat Display",
+        backgroundColor: "#040305",
+        fontFamily: "Neue Haas Grotesk Display Pro",
         color: "#fff",
       },
     }),

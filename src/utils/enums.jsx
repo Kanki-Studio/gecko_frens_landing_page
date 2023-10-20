@@ -25,19 +25,11 @@ export const footer_nav = [
     to: "/home",
   },
   {
-    name: "gameplay",
-    to: "/gameplay",
+    name: "market",
+    to: "/market",
   },
   {
-    name: "live",
-    to: "/live",
-  },
-  {
-    name: "upcoming",
-    to: "/upcoming",
-  },
-  {
-    name: "page",
-    to: "/page",
+    name: "about",
+    to: "/about",
   },
 ];
