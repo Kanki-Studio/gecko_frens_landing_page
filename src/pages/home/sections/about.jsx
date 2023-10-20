@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Text, Container, Flex, Image } from "@chakra-ui/react";
 import bird from "src/assets/bird.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -17,11 +18,18 @@ const About = () => {
             <Text fontSize={"40px"} fontFamily={"Azonix"} textAlign={"left"}>
               What is Gecko Frens?
             </Text>
-            <Text>
+            <Text mb="24px">
               Gecko Frens is a blockchain game running on Binance Smart Chain,
               Collect Ultra- Rare digital Pets, Play with them, Experience an
               adventure, trade and earn.{" "}
             </Text>
+
+            <Link
+              to="/about"
+              style={{ color: "#cafc01", textDecoration: "underline" }}
+            >
+              More
+            </Link>
           </Box>
           <Image
             src={bird}
@@ -29,7 +37,7 @@ const About = () => {
             position={"absolute"}
             height={"400px"}
             right={0}
-            top={"-113%"}
+            top={"-70%"}
             // w="100%"
           />
         </Flex>

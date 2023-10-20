@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "src/layout";
+import Layout from "../../layout/index";
 import Jumbotron from "./sections/jumbotron";
 import About from "./sections/about";
 import Characters from "./sections/characters";

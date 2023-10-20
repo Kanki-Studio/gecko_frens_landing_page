@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Text, Container, Grid, GridItem } from "@chakra-ui/react";
+import { Box, Text, Container, Grid, GridItem, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+// import Particles from "react-particles-js";
 
 const Jumbotron = () => {
   return (
-    <Container maxW="container.xl" py="167px" h="100vh">
+    <Container maxW="container.xl" py="167px" h="100vh" position={"relative"}>
       <Grid templateColumns={"repeat(2, 1fr)"}>
         <GridItem>
           <Box>
@@ -37,6 +39,22 @@ const Jumbotron = () => {
               Team up for a positive adorable adventure and unique NFT
               collectibles Game for Gecko Lovers!
             </Text>
+
+            <Link to="/market">
+              <Button
+                bg="#cafc01"
+                boxShadow={"inner"}
+                w="300px"
+                h="50px"
+                color={"#040305"}
+                mt="30px"
+                _hover={{
+                  bg: "#cafc01",
+                }}
+              >
+                Explore
+              </Button>
+            </Link>
           </Box>
         </GridItem>
       </Grid>
