@@ -1,4 +1,6 @@
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedin } from "react-icons/fa";
+import characterImage from "src/assets/character.png";
+import bowman from "src/assets/bowman.png";
 
 export const social_media = [
   {
@@ -31,5 +33,50 @@ export const footer_nav = [
   {
     name: "about",
     to: "/about",
+  },
+];
+
+export const characters = [
+  {
+    name: "kraven",
+    price: "0.0002",
+    type: "legendary",
+    number: 100,
+    image: characterImage,
+  },
+  {
+    name: "raven",
+    price: "0.0002",
+    type: "common",
+    number: 101,
+    image: bowman,
+  },
+  {
+    name: "kraven",
+    price: "0.0002",
+    type: "legendary",
+    number: 102,
+    image: characterImage,
+  },
+  {
+    name: "raven",
+    price: "0.0002",
+    type: "rare",
+    number: 103,
+    image: bowman,
+  },
+  {
+    name: "kraven",
+    price: "0.0002",
+    type: "legendary",
+    number: 104,
+    image: characterImage,
+  },
+  {
+    name: "raven",
+    price: "0.0002",
+    type: "uncommon",
+    number: 105,
+    image: bowman,
   },
 ];

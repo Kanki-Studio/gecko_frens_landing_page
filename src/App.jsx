@@ -13,7 +13,7 @@ function App() {
             element={route.element}
           />
         ))}
-        <Route exact path="/" element={<Navigate to="/home" replace />} />
+        <Route exact path="/home" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

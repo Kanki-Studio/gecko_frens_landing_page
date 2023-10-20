@@ -50,6 +50,7 @@ const Navbar = () => {
 
         <Button
           bg="#cafc01"
+          className={styles.btn}
           boxShadow={"inner"}
           w="auto"
           color={"#040305"}

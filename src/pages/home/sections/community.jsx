@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Text,
-  Image,
-  Grid,
-  GridItem,
-  Center,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Container, Text, Image, Center, Button } from "@chakra-ui/react";
 import bowman from "src/assets/character.png";
 
 const Community = () => {
@@ -24,8 +15,8 @@ const Community = () => {
         Gecko frens
       </Text>
       <Box>
-        <Grid templateColumns={"repeat(2,1fr)"} alignItems={"center"}>
-          <GridItem>
+        <Box className="grid" alignItems={"center"}>
+          <Box>
             <Center>
               <Image
                 src={bowman}
@@ -36,8 +27,8 @@ const Community = () => {
                 cursor={"pointer"}
               />
             </Center>
-          </GridItem>
-          <GridItem>
+          </Box>
+          <Box>
             <Text fontFamily={"Azonix"} fontSize={"30px"}>
               Join Our Community
             </Text>
@@ -58,8 +49,8 @@ const Community = () => {
             >
               Join Us
             </Button>
-          </GridItem>
-        </Grid>
+          </Box>
+        </Box>
       </Box>
     </Container>
   );
