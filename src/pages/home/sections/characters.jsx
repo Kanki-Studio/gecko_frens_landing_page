@@ -21,13 +21,11 @@ const Characters = () => {
       <Text>Gecko Frens</Text>
 
       <Box mt="30px">
-        <Grid templateColumns={"repeat(3, 1fr)"} gap="24px">
+        <Box className="grid_3">
           {[...new Array(6)].map((_, idx) => (
-            <GridItem key={idx + 1}>
-              <Cards />
-            </GridItem>
+            <Cards key={idx + 1} />
           ))}
-        </Grid>
+        </Box>
       </Box>
 
       <Box

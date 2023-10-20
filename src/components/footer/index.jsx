@@ -15,7 +15,12 @@ const Footer = () => {
           py="75px"
         >
           <Box>
-            <Text fontWeight={"900"} fontSize={"32px"} fontFamily={"Azonix"}>
+            <Text
+              fontWeight={"900"}
+              fontSize={"32px"}
+              fontFamily={"Azonix"}
+              color="#cafc01"
+            >
               GECKO FRENS
             </Text>
 
