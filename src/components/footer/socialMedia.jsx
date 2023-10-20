@@ -4,17 +4,15 @@ import { Box } from "@chakra-ui/react";
 const SocialMedia = ({ item }) => {
   return (
     <Box
-      w="48px"
-      h="48px"
-      bg={item.color}
+      w="40px"
+      h="40px"
+      border="1px solid #fff"
       display={"grid"}
       placeItems={"center"}
       borderRadius={"100%"}
-      fontSize={"20"}
+      fontSize={"16px"}
+      color={"#fff"}
       cursor={"pointer"}
-      boxShadow={
-        "2px 3px 10px 0px rgba(0, 0, 0, 0.50) inset, -3px -2px 10px 0px rgba(255, 255, 255, 0.50) inset"
-      }
     >
       {item.icon}
     </Box>
