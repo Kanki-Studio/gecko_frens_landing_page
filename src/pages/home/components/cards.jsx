@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text, Image, Flex, Button } from "@chakra-ui/react";
-import character from "src/assets/character.png";
+import character from "src/assets/gecko_art.png";
 import Badge from "src/components/badge";
 
 const Cards = () => {

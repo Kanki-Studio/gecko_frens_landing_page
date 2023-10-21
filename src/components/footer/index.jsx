@@ -1,8 +1,7 @@
 import React from "react";
-import { Box, Text, Container, Image } from "@chakra-ui/react";
-import { footer_nav, social_media } from "src/utils/enums";
+import { Box, Text, Container } from "@chakra-ui/react";
+import { social_media } from "src/utils/enums";
 import SocialMedia from "./socialMedia";
-import Navigation from "./nav";
 
 const Footer = () => {
   return (
@@ -34,12 +33,6 @@ const Footer = () => {
                 <SocialMedia key={idx} item={social} />
               ))}
             </Box>
-          </Box>
-
-          <Box display={"flex"} gap="50px">
-            {footer_nav.map((footer, idx) => (
-              <Navigation footer={footer} key={idx} />
-            ))}
           </Box>
         </Box>
 

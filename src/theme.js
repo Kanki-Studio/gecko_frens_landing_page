@@ -7,6 +7,7 @@ export const Theme = extendTheme({
         backgroundColor: "#040305",
         fontFamily: "Neue Haas Grotesk Display Pro",
         color: "#fff",
+        overflowX: "hidden",
       },
     }),
   },
