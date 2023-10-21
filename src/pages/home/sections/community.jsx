@@ -1,8 +1,18 @@
 import React from "react";
-import { Box, Container, Text, Image, Center, Button } from "@chakra-ui/react";
-import bowman from "src/assets/character.png";
+import {
+  Box,
+  Container,
+  Text,
+  Image,
+  Center,
+  Button,
+  useMediaQuery,
+} from "@chakra-ui/react";
+import bowman from "src/assets/gecko_art.png";
 
 const Community = () => {
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
+
   return (
     <Container maxW="container.xl" h="80vh">
       <Text

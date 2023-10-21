@@ -12,7 +12,7 @@ export const routes = [
     element: <Market />,
   },
   {
-    path: "/:id",
+    path: "/gecko/:id",
     element: <Character />,
   },
 ];

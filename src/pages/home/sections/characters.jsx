@@ -8,11 +8,17 @@ import {
   Image,
   Center,
   Button,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import Cards from "../components/cards";
-import bowman from "src/assets/character.png";
+import bowman from "src/assets/gecko_art.png";
+import { characters } from "src/utils/enums";
+import CharacterCards from "src/components/card/cards";
+import { Link } from "react-router-dom";
 
 const Characters = () => {
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
+
   return (
     <Container maxW={"container.xl"} py="250px">
       <Text fontFamily={"Azonix"} fontSize={"30px"}>
@@ -22,8 +28,15 @@ const Characters = () => {
 
       <Box mt="30px">
         <Box className="grid_3">
-          {[...new Array(6)].map((_, idx) => (
-            <Cards key={idx + 1} />
+          {characters.slice(6).map((data, idx) => (
+            <Link key={idx + 1} to={`/gecko/${data.name}`}>
+              <CharacterCards
+                name={data.name}
+                price={data.price}
+                number={data.number}
+                image={data.image}
+              />
+            </Link>
           ))}
         </Box>
       </Box>
@@ -36,12 +49,15 @@ const Characters = () => {
         px="30px"
         py="40px"
       >
-        <Grid templateColumns={"repeat(2, 1fr)"} alignItems={"center"}>
+        <Grid
+          templateColumns={isLargerThan800 ? "repeat(2, 1fr)" : "auto"}
+          alignItems={"center"}
+        >
           <GridItem>
             <Text fontFamily={"Azonix"} fontSize={"30px"}>
               Characters
             </Text>
-            <Box w="400px">
+            <Box w={isLargerThan800 ? "400px" : "auto"}>
               <Text>
                 Each character has their own power, choose the good gecko and
                 engage in battle with friends in a winner takes all style.
@@ -66,6 +82,8 @@ const Characters = () => {
               <Image
                 src={bowman}
                 alt="bowman"
+                zIndex={isLargerThan800 ? 1 : "-1"}
+                top={isLargerThan800 ? "-30%" : "-60%"}
                 position={"absolute"}
                 right={"10%"}
                 h="400px"

@@ -1,9 +1,18 @@
 import React from "react";
-import { Box, Text, Container, Flex, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Text,
+  Container,
+  Flex,
+  Image,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import bird from "src/assets/bird.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
+
   return (
     <Container maxW="container.xl" pt="250px">
       <Box
@@ -37,6 +46,7 @@ const About = () => {
             position={"absolute"}
             height={"400px"}
             right={0}
+            zIndex={isLargerThan800 ? 1 : "-1"}
             top={"-70%"}
             // w="100%"
           />
